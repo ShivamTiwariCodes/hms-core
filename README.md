@@ -1,62 +1,119 @@
-<!--
-This section provides instructions and guidelines to help users get started with the HMS Core project. It typically includes setup steps, installation instructions, and initial configuration details necessary for new users or contributors.
--->
-## Getting Started
 
-Welcome to **HMS Core**! This service powers authentication, user management, and the core business logic for the Hospital Management System (HMS). Follow these steps to set up and run the project locally:
+---
 
-### Prerequisites
+# HMS Core
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/) (v6 or higher)
-- Access to the required environment variables (see `.env.example`)
+**HMS Core** is the central microservice for powering authentication, user management, and core business logic in the **Hospital Management System (HMS)**. This repository provides all necessary tools and configurations for developers to get started with local development, testing, and contribution.
 
-### Setup
+---
 
-1. **Clone the repository**
-    ```bash
-    git clone https://github.com/your-org/hms-core.git
-    cd hms-core
-    ```
+## 📦 Features
 
-2. **Install dependencies**
-    ```bash
-    npm install
-    ```
+* User authentication and authorization
+* Role-based access control
+* Core service logic for patient, doctor, and administrative workflows
+* Easy-to-extend architecture for future modules
 
-3. **Configure environment variables**
+---
 
-    Copy `.env.example` to `.env` and update the values as needed for your environment:
-    ```bash
-    cp .env.example .env
-    ```
+## 🚀 Getting Started
 
-4. **Run database migrations** (if applicable)
-    ```bash
-    npm run migrate
-    ```
+Follow the steps below to set up and run the HMS Core service locally.
 
-5. **Start the service**
-    ```bash
-    npm start
-    ```
+### ✅ Prerequisites
 
-### Project Structure
+Before starting, ensure that the following are installed:
 
-- `src/` – Main application source code
-- `docs/` – API documentation and developer guides
-- `config/` – Configuration files and environment settings
+* [Node.js](https://nodejs.org/) (v14 or higher)
+* [npm](https://www.npmjs.com/) (v6 or higher)
+* Access to required environment variables (see `.env.example`)
 
-### Useful Commands
+---
 
-- `npm test` – Run the test suite
-- `npm run lint` – Lint the codebase
-- `npm run dev` – Start the service in development mode with hot reload
+### ⚙️ Setup Instructions
 
-### Next Steps
+1. **Clone the Repository**
 
-- Explore the [API Documentation](docs/api.md) for available endpoints.
-- Review [CONTRIBUTING.md](CONTRIBUTING.md) if you want to contribute.
+   ```bash
+   git clone https://github.com/your-org/hms-core.git
+   cd hms-core
+   ```
 
-If you encounter any issues, please open an issue on GitHub or reach out to the maintainers.
+2. **Install Project Dependencies**
 
+   ```bash
+   npm install
+   ```
+
+3. **Set Up Environment Variables**
+
+   Copy the example environment file and customize it:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Update the values in `.env` as per your development or deployment environment.
+
+4. **Run Database Migrations** (if applicable)
+
+   ```bash
+   npm run migrate
+   ```
+
+5. **Start the Application**
+
+   ```bash
+   npm start
+   ```
+
+---
+
+## 📁 Project Structure
+
+```text
+hms-core/
+├── src/          # Main application source code
+├── config/       # Configuration files and environment setups
+├── docs/         # API documentation and developer guides
+├── tests/        # Test cases and fixtures
+├── .env.example  # Template for required environment variables
+```
+
+---
+
+## 🛠️ Useful Commands
+
+| Command           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| `npm start`       | Start the application                        |
+| `npm run dev`     | Run the app in development mode (hot reload) |
+| `npm test`        | Execute the test suite                       |
+| `npm run lint`    | Run code linting checks                      |
+| `npm run migrate` | Apply database migrations                    |
+
+---
+
+## 📚 Documentation
+
+* **API Reference**: See [`docs/api.md`](docs/api.md)
+* **Contributing Guide**: See [`CONTRIBUTING.md`](CONTRIBUTING.md)
+
+---
+
+## 🙋 Support
+
+If you encounter issues or have questions:
+
+* Create a GitHub [issue](https://github.com/your-org/hms-core/issues)
+* Reach out to the maintainers listed in the `package.json` or via the project Slack (if applicable)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Let me know if you'd like to include Docker setup, CI/CD documentation, or a badge section at the top (e.g., for build status, code coverage, etc.).
