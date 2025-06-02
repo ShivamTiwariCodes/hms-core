@@ -1,35 +1,62 @@
-# hms-core
-, responsible for handling authentication, user management, and core business logic. It provides RESTful APIs for other HMS modules and ensures secure, scalable operations. Key features include:
-
-- User registration and authentication
-- Role-based access control
-- Integration with external services
-- Centralized error handling and logging
-
+<!--
+This section provides instructions and guidelines to help users get started with the HMS Core project. It typically includes setup steps, installation instructions, and initial configuration details necessary for new users or contributors.
+-->
 ## Getting Started
 
-1. Clone the repository:
+Welcome to **HMS Core**! This service powers authentication, user management, and the core business logic for the Hospital Management System (HMS). Follow these steps to set up and run the project locally:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) (v6 or higher)
+- Access to the required environment variables (see `.env.example`)
+
+### Setup
+
+1. **Clone the repository**
     ```bash
     git clone https://github.com/your-org/hms-core.git
+    cd hms-core
     ```
-2. Install dependencies:
+
+2. **Install dependencies**
     ```bash
     npm install
     ```
-3. Configure environment variables as per `.env.example`.
-4. Start the service:
+
+3. **Configure environment variables**
+
+    Copy `.env.example` to `.env` and update the values as needed for your environment:
+    ```bash
+    cp .env.example .env
+    ```
+
+4. **Run database migrations** (if applicable)
+    ```bash
+    npm run migrate
+    ```
+
+5. **Start the service**
     ```bash
     npm start
     ```
 
-## API Documentation
+### Project Structure
 
-See [API Docs](docs/api.md) for detailed endpoints and usage.
+- `src/` – Main application source code
+- `docs/` – API documentation and developer guides
+- `config/` – Configuration files and environment settings
 
-## Contributing
+### Useful Commands
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+- `npm test` – Run the test suite
+- `npm run lint` – Lint the codebase
+- `npm run dev` – Start the service in development mode with hot reload
 
-## License
+### Next Steps
 
-This project is licensed under the MIT License.
+- Explore the [API Documentation](docs/api.md) for available endpoints.
+- Review [CONTRIBUTING.md](CONTRIBUTING.md) if you want to contribute.
+
+If you encounter any issues, please open an issue on GitHub or reach out to the maintainers.
+
